@@ -92,4 +92,8 @@ AES
 
 1. 加密算法 y=ek(x)=k1*x+k2(mod 26)
 2. 解密算法 x=dk(y)=k1^-1 * (y-k2)(mod 26)
-3. 密钥 k=(k1,k2)
+3. 密钥 k=(k1,k2)
+
+## 25. 置换密码算法的计算过程
+
+## 26.	RSA算法的计算过程1. 选择两个大素数p和q (p≠q)2. 计算n＝pq和n的Euler数φ(n)=(p-1)(q-1)3. 选择随机整数e (1 < e <φ(n) )，使gcd(e,φ(n))＝14. 用欧氏算法计算d，使得de＝1 modφ(n)5. 公钥：KU＝{e, n}，私钥：KR＝{d, p, q}6. Public和Private的第二个字母7. 加密：Ek(x)＝xe mod n8. 解密：Dk(y)＝yd mod n![rsa](rsa.png)
