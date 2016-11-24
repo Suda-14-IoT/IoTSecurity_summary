@@ -85,4 +85,11 @@ AES
 	* 去掉 ci di 的8位，重排48位
 5. 输出
 
-![des_key](des_key.png)
+![des_key](des_key.png)
+
+## 24.	仿射密码算法的计算过程
+将移位和乘数替换相结合
+
+1. 加密算法 y=ek(x)=k1*x+k2(mod 26)
+2. 解密算法 x=dk(y)=k1^-1 * (y-k2)(mod 26)
+3. 密钥 k=(k1,k2)
